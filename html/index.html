@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>チーズアカデミー</title>
+    <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
+    <meta property="og:title" content="チーズアカデミー">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="チーズアカデミー" />
+    <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+    <style>
+        .btn {
+            font-size: 30px;
+            border-bottom: solid 10px green;
+            font-size: large;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="title" class="title_box">
+        <div>
+            <h1 class="title">セカイを変えるチーズを作ろう</h1>
+        </div>
+        <div>
+            <h2 class="subtitle">チーズ職人養成学校「チーズアカデミーFUKUOKA」</h2>
+        </div>
+    </div>
+    <div class="ヘッダー">
+        <div class="ヘッダーlogo"><img src="/Users/mari8yoshi/G's/1025課題/img/header_logo.png" alt="ヘッダー"></div>
+        <div id="btn" class="bottan">
+            <div id="btn1">
+                <a href="/Users/mari8yoshi/G's/1025課題/html/about.html" class=" btn-square-pop1">About</a></div>
+            <div id="btn2">
+                <a href="/Users/mari8yoshi/G's/1025課題/html/course.html" class=" btn-square-pop2">Course</a></div>
+            <div id="btn3">
+                <a href="/Users/mari8yoshi/G's/1025課題/html/アクセス .html" class=" btn-square-pop3">Access</a></div>
+            <div id="btn4"><a href="/Users/mari8yoshi/G's/1025課題/html/contact.html" class=" btn-square-pop4">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div id="news">
+        <h2 class="news">NEWS
+    </div>
+    <div id="newsbox0" class=newsbox0>
+
+        <div class="newsbox">
+
+            <div id="newsimg1" class="pizzaimage"><img src="../img/news_img.jpg" alt="Pizza"></div>
+
+            <div class="newsday">
+                <h3>2018/11/24</h3>
+            </div>
+
+            <div id="pizzatxst1" class="pizzatxst">
+                <p>チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！</p>
+            </div>
+        </div>
+        <div class="newsbox2">
+
+
+            <div id="newsimg2" class="pizzaimage"><img src="../img/news_img.jpg" alt="Pizza"></div>
+
+            <div class="newsday">
+                <h3>2018/11/24</h3>
+            </div>
+
+            <div id="pizzatxst2" class="pizzatxst">
+                <p>チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！</p>
+            </div>
+        </div>
+
+        <div class="newsbox2">
+
+
+            <div id="newsimg3" class="pizzaimage"><img src="../img/news_img.jpg" alt="Pizza"></div>
+
+            <div class="newsday">
+                <h3>2018/11/24</h3>
+            </div>
+            <div id="pizzatxst3" class="pizzatxst">
+                <p>チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！</p>
+            </div>
+        </div>
+    </div>
+    <div class="loop_css">
+        <img src="../img/about-image.jpg" alt="動く写真">
+        <img src="../img/about-image.jpg">
+    </div>
+    <div><a href="index.html" class="btn-square-pop5">TOPへ戻る</a></div>
+    <div class="フッター">
+        <p>2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            //ここに自分の処理を追加!
+            $('#title').click(function () {
+                //alert("ok")
+                $('#title').hide().fadeIn(5000);
+            });
+        });
+        $(function () {
+            $("#btn").on("click", function () {
+                //alert("ok")
+                $("#btn").css("color", "pink");
+            })
+        })
+
+        $(function () {
+            $("#news").mouseover(function () {
+                //alert("ok")
+                $("#news").css("coler", "black");
+            })
+        })
+        $(function () {
+            $("#newsbox0").on("", function () {
+                //alert("ok")
+                $("#news").css("background", "pink");
+            })
+        })
+        //マウスオーバーで操作
+        $(function () {
+            $("#newsbox0").mouseover(function () {
+                //alert("ok")
+                $("#news").css("background", "pink");
+            })
+        })
+        //マウスアウトで操作
+        $(function () {
+            $("#newsbox0").mouseout(function () {
+                //alert("ok")
+                $("#news").css("background", "none");
+            })
+        })
+
+        //
+        $(function () {
+            $("#btn1").mouseover(function () {
+                //alert("ok")
+                $("#btn1").addClass("btn");
+            })
+        })
+        $(function () {
+            $("#btn1").mouseout(function () {
+                //alert("ok")
+                $("#btn1").removeClass("btn");
+            })
+        })
+        $(function () {
+            $("#btn2").mouseover(function () {
+                //alert("ok")
+                $("#btn2").addClass("btn");
+            })
+        })
+        $(function () {
+            $("#btn2").mouseout(function () {
+                //alert("ok")
+                $("#btn2").removeClass("btn");
+            })
+        })
+        $(function () {
+            $("#btn3").mouseover(function () {
+                //alert("ok")
+                $("#btn3").addClass("btn");
+            })
+        })
+        $(function () {
+            $("#btn3").mouseout(function () {
+                //alert("ok")
+                $("#btn3").removeClass("btn");
+            })
+        })
+        $(function () {
+            $("#btn4").mouseover(function () {
+                //alert("ok")
+                $("#btn4").addClass("btn");
+            })
+        })
+        $(function () {
+            $("#btn4").mouseout(function () {
+                //alert("ok")
+                $("#btn4").removeClass("btn");
+            })
+        })
+
+        $(function () {
+            $("#newsimg1").on("mouseover", function () {
+                //alert("ok")
+                $("#pizzatxst1").show("slow");
+            })
+        })
+        $(function () {
+            $("#newsimg1").on("mouseout", function () {
+                //alert("ok")
+                $("#pizzatxst1").hide("slow");
+            })
+        })
+
+        $(function () {
+            $("#newsimg2").on("mouseover", function () {
+                //alert("ok")
+                $("#pizzatxst2").show("slow");
+            })
+        })
+        $(function () {
+            $("#newsimg2").on("mouseout", function () {
+                //alert("ok")
+                $("#pizzatxst2").hide("slow");
+            })
+        })
+        $(function () {
+            $("#newsimg3").on("mouseover", function () {
+                //alert("ok")
+                $("#pizzatxst3").show("slow");
+            })
+        })
+        $(function () {
+            $("#newsimg3").on("mouseout", function () {
+                //alert("ok")
+                $("#pizzatxst3").hide("slow");
+            })
+        })
+
+        $("head").append("<style>body{display:none;}");
+        $(window).on("load", function () {
+            $("body").delay(600).fadeIn("slow");
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

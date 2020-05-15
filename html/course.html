@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Course</title>
+  <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
+  <meta property="og:title" content="チーズアカデミー">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="#" />
+  <meta property="og:site_name" content="チーズアカデミー" />
+  <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="#">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/sanitize.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+
+<body>
+
+  <div class="coursetitle">
+    <h2>Course</h2>
+  </div>
+  <div class="ctext">
+    <p>未経験からでもスタートができるよう，カリキュラムは多くの専門家や<br>現役チーズ職人のアドバイスのもと，作られました．</p>
+    <br>
+    <br>
+
+  </div>
+  <div class="course1">
+    <div id="course1text" class="course1text">
+      <div class="course1title">
+        <p>本格的な農園を使った実地研修</p>
+      </div>
+      <div class="text1">
+        <p>チーズアカデミーでは，本格的な農園を使った<br>実地研修を行うことができます．</p>
+        <p>プロとして活躍するチーズ職人も使用するような，<br>
+          広大で環境も整った農園を余すところなく使い，<br>卒業時には本格的なチーズを自分の力で作れる<br>実践力の養成を目指します．</p>
+      </div>
+    </div>
+    <div id="course1img" class="course1imag">
+      <img src="../img/course_01.jpg" alt="写真1">
+    </div>
+  </div>
+  <div class="course2">
+    <div id="course2img" class="course2imag">
+      <img src="../img/course_02.jpg" alt="写真2">
+    </div>
+    <div id="course2text" class="course2text">
+      <div class="course2title">
+        <p>必要な知識もしっかりと取得</p>
+      </div>
+      <div class="text2">
+        <p>チーズ作りには，しっかりとした食に関する知識が<br>欠かせません．チーズアカデミーでは，一流講師陣による，<br>チーズ作りに必要ないろはを余すところなく学べます．</p>
+        <p>チーズそのものでなく，栄養学全般を学ぶことも可能ですので，チーズ以外への展開も夢ではないでしょう．</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="course3">
+    <div id="course3text" class="course3text">
+      <div class="course3title">
+        <p>卒業制作はティスティング審査あり</p>
+      </div>
+      <div class="text3">
+        <p>チーズアカデミーでは最後の2ヶ月間で卒業制作を実施．<br>卒業制作として，チーズ作りを実際に行います．</p>
+        <p>卒業後，一般参加によるティスティング審査があるため，<br>作り手の目線だけでなく，消費者の目線から，卒業制作作品としてのチーズを，しっかりと評価いただくことができます．
+        </p>
+      </div>
+    </div>
+    <div id="couse3img" class="course3img">
+      <img src="../img/course_03.jpg" alt="写真3">
+    </div>
+  </div>
+  </div>
+  <div><a href="index.html" class="btn-square-pop5">戻る</a></div>
+
+  <div class="フッター">
+    <p>2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      //ここに自分の処理を追加! 
+      $("head").append("<style>body{display:none;}");
+      $(window).on("load", function () {
+        $("body").delay(600).fadeIn("slow");
+      });
+    });
+
+    $(function () {
+      $("#course1img").mouseover(function () {
+        //alert("ok")
+        $("#course1text").show("slow");
+      })
+    })
+
+    $(function () {
+      $("#course1img").mouseout(function () {
+        //alert("ok")
+        $("#course1text").fadeOut("slow");
+      })
+    })
+
+
+    $(function () {
+      $("#course2img").mouseover(function () {
+        //alert("ok")
+        $("#course2text").show("slow");
+      })
+    })
+
+    $(function () {
+      $("#course2img").mouseout(function () {
+        //alert("ok")
+        $("#course2text").fadeOut("slow");
+      })
+    })
+
+    $(function () {
+      $("#couse3img").mouseover(function () {
+        //alert("ok")
+        $("#course3text").show
+          ("slow");
+      })
+    })
+
+    $(function () {
+      $("#couse3img").mouseout(function () {
+        //alert("ok")
+        $("#course3text").hide("slow");
+      })
+    })
+
+
+  </script>
+
+</body>
+
+</html>
